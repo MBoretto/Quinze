@@ -36,31 +36,44 @@ conn.close()
 
 
 import HTMLParser
+from urlparse import urlsplit, urlparse, parse_qs
+
 
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser.HTMLParser):
 	def __init__(self):
 		HTMLParser.HTMLParser.__init__(self)
-		self.F_tr = 0
-		self.F_td = 0
-		self.data = []
+		self.F_a = 0		
 
 	def handle_starttag(self, tag, attrs):
-		if tag == 'tr':
-			self.F_tr = 1
-		if tag == 'td':
-			self.F_td = 1
+		if tag == 'a':			
+			#print attrs
+			#print len(attrs)
+			for i in range(len(attrs)):
+				if attrs[i][0] == 'href':
+					linkStruct = urlsplit(attrs[i][1])
+					if linkStruct.path == 'QO_Arrivi_SiPMR.aspx':
+						#print 'OOOK!'
+						self.F_a = 1
+						#print linkStruct.query
+						explode_query = parse_qs(urlparse(attrs[i][1]).query)
+						print explode_query['Id'][0]
+						#print attrs[i][0], ' ' , attrs[i][1]
+
+			
+	
 
 	def handle_endtag(self, tag):
-		if tag == 'tr':
-			self.F_tr = 0
-		if tag == 'td':
-			self.F_td = 1
+		if tag == 'a':
+			self.F_a = 0
+			#print
+		
 
 	def handle_data(self, data):
-		if self.F_tr == 1 and self.F_td == 1:
+		if self.F_a == 1:
 			data = data.strip(' \t\n\r')
 			print data 
+			print
 
 # instantiate the parser and fed it some HTML
 parser = MyHTMLParser()
