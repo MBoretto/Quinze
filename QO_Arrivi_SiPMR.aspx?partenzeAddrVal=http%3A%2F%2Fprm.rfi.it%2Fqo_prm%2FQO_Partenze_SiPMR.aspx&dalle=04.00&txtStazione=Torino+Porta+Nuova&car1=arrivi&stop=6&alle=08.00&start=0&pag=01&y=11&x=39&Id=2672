@@ -1,0 +1,1001 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Orario dei treni in arrivo nella stazione di Torino Porta Nuova - RFI</title>
+	<link rel="stylesheet" href="css/styleQO.css" media="screen" />
+	<!--[if IE 7]><link rel="stylesheet" href="css/ie7.css" media="screen" /><![endif]-->
+	<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" media="screen" /><![endif]-->
+	<script type="text/javascript" src="js/utility.js"></script>
+	<script type="text/javascript" src="js/expandCollapseTxt.js"></script>   
+</head>
+<body>	 
+	<!-- CONTAINER -->
+	<div id="container">
+		<div class="hidden"><a name="top" id="top"></a>
+			Metanavigazione in questa pagina:
+			<ul>
+				<li><a href="#navigation">Vai al menu principale</a></li>
+				<li><a href="#menuNav">Vai al menu di navigazione</a></li>
+				<li><a href="#qorario">Vai al quadro orario</a></li>
+				<li><a href="#footerFS">Vai ai link di footer</a></li>
+			</ul>
+		</div>
+		<!-- HEADER -->
+		<div id="headerGruppo">
+			<h1 class="hidden">Gruppo Ferrovie dello Stato</h1>
+			<div class="headerTop">
+				<div class="headerLeftNav"> 
+					<a href="http://www.ferroviedellostato.it/homepage.html" title="Vai al sito FS">Home FS</a><span>&nbsp;&nbsp;|&nbsp;</span>
+					<a href="http://www.rfi.it/rfi.html" title="Home page RFI">RFI</a><span>&nbsp;&nbsp;|&nbsp;</span>
+					<a href="http://www.ferroviedellostato.it/ilgruppo.html" title="Vai al sito di Gruppo">Il Gruppo</a><span>&nbsp;&nbsp;|&nbsp;</span>
+					<a href="http://www.fsnews.it/fsnews.html" title="Vai al sito FS News">FS News</a><span>&nbsp;&nbsp;|&nbsp;</span>
+					<a href="http://www.ferroviedellostato.it/lavoraconnoi.html" title="Vai al sito Lavora con noi">Lavora con noi</a>
+				</div>
+				<div class="headerRightNav">
+					<div class="ricerca">
+						<div>
+							<form action="http://www.rfi.it/cms/v/index.jsp?vgnextoid=0c0b8369e323a110VgnVCM10000080a3e90aRCRD" method="post">
+								<p>
+									<label class="hidden" for="cercaNelSito">Parola da cercare</label>
+									<input type="text" name="textfield" id="cercaNelSito" class="campoR" />
+									<input src="images/button_cerca.gif" disabled="disabled" type="image" title="Cerca nei siti del Gruppo FS" class="buttonCerca" />
+								</p>
+							</form>
+						</div>
+					</div>
+					<div class="headerRightNavLeft">
+						<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=4c5890e4d9aba110VgnVCM1000003f16f90aRCRD" title="Go to RFI English website">English</a>
+					</div>
+					<div class="clearDiv"></div>
+				</div>
+			</div>	
+			<div class="headerBottom">
+				<div class="headerBottomRight">
+					<img src="images/logoRFI.jpg" alt="Logo RFI" />
+				</div>
+				<div class="headerBottomLeft">
+					<div class="headerBottomLeftIn" style="background:url('images/bg_header_slogan_rosso_rfi.jpg') bottom left no-repeat;"></div>
+				</div>
+			</div>
+			<div class="clearDiv"></div>
+		</div>
+		<!-- /HEADER -->
+		
+		<!-- MENU DI PRIMO LIVELLO -->
+		<div id="navigation">
+			<div class="menuInt">
+				<div class="menuIntLeftRow"><div class="menuIntRightRow">
+					<div class="menuIntTopLeft"><div class="menuIntTopRight">
+						<div class="menuIntBotLeft"><div class="menuIntBotRight">
+							<h3 class="hidden">Menu principale</h3>
+							<ul id="menu1" title="Men&ugrave; di primo livello">
+								<li class="M8cellaprima"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=26ac8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="1" >Chi siamo</a></li>	
+                                <li class="M8cellaunica"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=9dac8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="2" >Le nostre attivit&#224;</a></li>	
+                                <li class="M8cellaunica"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=25bc8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="3" >Rete e territorio</a></li>	
+                                <li class="M8cellaunica"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=9fbe8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="4" class="menu1attivo">Stazioni</a></li>	
+                                <li class="M8cellaunica"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=ebbc8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="5" >Sicurezza e tecnologia</a></li>	
+                                <li class="M8cellaunica"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=fbcc8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="6" >Clienti e mercato</a></li>	
+                                <li class="M8cellaunica"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=44dc8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="7" >Qualificazione e gare</a></li>	
+                                <li class="M8cellaultima"><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=ccdc8c3e13e0a110VgnVCM10000080a3e90aRCRD" title="" accesskey="8" >Notizie e documenti</a></li>	
+                            </ul>
+							<p class="hidden">[ <a href="#top">Torna all&#39;inizio della pagina</a> ]</p>
+						</div></div>
+					</div></div>
+				</div></div>
+			</div>
+		</div>
+		<div class="clearDiv"></div>
+		<!-- /MENU DI PRIMO LIVELLO -->
+
+		<!-- CONTENUTI -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id="content">
+
+			<!-- Menu di navigazione -->
+            <div id="menuNav">
+	            <h3 class="hidden">Menu di navigazione</h3>
+	            <span class="navigator">
+		            <a title="Home" href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=927ce14114bc9110VgnVCM10000080a3e90aRCRD">Home</a>
+		            <span class="freccia">&gt;</span>
+		            <a title="Stazioni" href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=9fbe8c3e13e0a110VgnVCM10000080a3e90aRCRD">Stazioni</a>
+		            <span class="freccia">&gt;</span>
+		            <a title="Quadri Orario" href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=f3fe155031639210VgnVCM1000004016f90aRCRD">Quadri Orario</a>
+		            <span class="freccia">&gt;</span>
+		            Risultato ricerca
+	            </span>
+	            <div class="clearDiv"></div>
+            </div>
+            <p class="hidden">[ <a href="#top">Torna all'inizio della pagina</a> ]</p>
+            <!-- /Menu di navigazione -->
+
+			<!-- Paragrafo -->
+			
+			<div class="ContParag">
+				<a name="qorario" id="qorario"></a>
+
+				<!-- Titolo -->
+			    
+				
+				<div class="QOtobBoxToolsUpper">
+					<div class="angBotDx">
+						<div class="TopTabSxUpper">
+							<div class="topLink">
+								ORARIO PROGRAMMATO 15 Dicembre 2013 - 13 Dicembre 2014
+							</div>
+							<div class="botLink"></div>
+							<!--<div class="clearRight"></div>
+							<div class="clearDiv"></div>-->
+						</div>
+						 <!--<div class="clearLeft"></div>-->
+						<div class="clearDiv"></div>
+					</div>						
+				</div>
+				
+				<!--<div class="clearDiv"></div>-->
+					
+				<div id="QOtobBoxTools">
+				
+					<div class="tl"><div class="tr">
+						<div class="bl"><div class="br">
+							<div class="int">
+								<div class="top">
+									<div class="left">
+										<div class="Sx">
+											<h4>Stazione di</h4>
+											<h2>TORINO PORTA NUOVA</h2>
+											
+					                            <h3>Comune di Torino</h3>
+					                           
+					                        
+											
+										</div>
+										<div class="Dx">
+											<div class="pmr">
+												<div class="pmrTop">
+													<div class="pmrBot">
+														
+														    <img src="images/ico_pmr_big.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" />
+														    <p>Stazione con servizio di assistenza<br />alle Persone a Ridotta Mobilità.<br /><br />
+                                                                
+                                                                <a href="popup_SiPMR.aspx" title="Vai alle informazioni su come richiedere il servizio di assistenza" onclick="open_popup('popup_SiPMR.aspx', 500, 380, 350, 20); return false;">
+                                                                Informazioni sulla prenotazione</a>
+														    </p>
+														
+													</div>
+												</div>
+											</div>
+											<!--
+											<div class="postit">
+												<div class="postitTop">
+													<div class="postitBot">
+										         	    <span style="color:#B30002; font-weight:bold">27/01/2014</span>
+														<p><a href="http://www.fsnews.it/cms/v/index.jsp?vgnextoid=d3b868ae9d50a110VgnVCM10000080a3e90aRCRD" title="Link esterno alla sezione di FSNews dedicata alle modifiche alla circolazione">Controlla qui se sono previste temporanee modifiche alla circolazione nei giorni che ti interessano</a></p>
+														<p>Controlla qui se sono previste temporanee modifiche alla circolazione nei giorni che ti interessano</p>
+													</div>
+												</div>
+											</div>
+											-->
+									    </div>	
+									</div>									
+									<div class="right">
+										<br /><br /><a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=f3fe155031639210VgnVCM1000004016f90aRCRD">Scegli un'altra stazione</a>
+                                    </div>
+									<div class="clearDiv"></div>
+								</div>
+								<div class="bot">
+									<div class="left">Fascia oraria 04:00 - 08:00</div>
+									<div class="right">
+										<form name="form1" method="post" action="QO_Arrivi_SiPMR.aspx?partenzeAddrVal=http%253A%252F%252Fprm.rfi.it%252Fqo_prm%252FQO_Partenze_SiPMR.aspx&amp;dalle=04.00&amp;txtStazione=Torino%2bPorta%2bNuova&amp;car1=arrivi&amp;stop=6&amp;alle=08.00&amp;start=0&amp;pag=01&amp;y=11&amp;x=39&amp;Id=2672" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTgyNzY1MDYzNw9kFgoCAQ8WAh4EVGV4dAUSVG9yaW5vIFBvcnRhIE51b3ZhZAIDDxYCHgdWaXNpYmxlaGQCBQ8WAh8BaGQCBw8WAh8BaGQCCQ9kFgJmDxYCHwAFDTA0OjAwIC0gMDg6MDBkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQlidG5PcmFyaW/njIudSA7vxLjIKz8T4TzDNIIp6Q==" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwKWxqaHAgKb662cCQL5mIvsA5HlfSF+ccxAklNHVNP8V/8Fu1BZ" />
+											<fieldset>
+												<legend class="hidden">Ricerca i treni per fascia oraria</legend>
+												<label for="staz_ora">Cambia fascia oraria</label>
+												<select name="staz_ora" id="staz_ora">
+	<option selected="selected" value="04:00 - 08:00">04:00 - 08:00</option>
+	<option value="08:00 - 12:00">08:00 - 12:00</option>
+	<option value="12:00 - 16:00">12:00 - 16:00</option>
+	<option value="16:00 - 20:00">16:00 - 20:00</option>
+	<option value="20:00 - 00:00">20:00 - 00:00</option>
+	<option value="00:00 - 04:00">00:00 - 04:00</option>
+</select>
+												<input type="image" name="btnOrario" id="btnOrario" title="Avvia la ricerca per fascia oraria" class="butImg" src="images/buttonInvia.gif" border="0" />
+											</fieldset>	
+										</form>	
+									</div>
+								</div>
+							</div>
+						</div></div>
+					</div></div>
+				</div>
+				<!-- /Titolo -->	
+					    
+						
+					
+										
+				<!-- /Titolo -->                
+
+				<div class="TopTab">
+					<div class="angBotDx">
+						<!-- Tab Arrivi/Partenze -->
+						<div class="TopTabSx">
+							<div class="tab on"><span class="ap">Arrivi&nbsp;</span></div>
+							<div class="tab off">                                
+                                
+                                     <a style="color: #b30002;" title="Vai all'orario dei treni in partenza dalla stazione di Torino Porta Nuova" href="QO_Partenze_SiPMR.aspx?Id=2672&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Partenze</a>
+                                                                
+                            </div>
+							<div class="clearLeft"></div>
+						</div>
+						<!-- /Tab Arrivi/Partenze -->
+						<!-- Link destra -->
+						<div class="TopTabDx">
+						
+							<div class="topLink">
+								
+								<a href="QO_Stampa.aspx?Tipo=A&amp;id=2672&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00" title="Vai al formato stampa" onclick="open_popup('QO_Stampa.aspx?Tipo=A&amp;id=2672&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00', 1000, 700, 100, 0); return false;">Stampa questa pagina</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                
+                                
+                                    <a href="QO_Pdf.aspx?Tipo=A&amp;lin=it&amp;id=2672" title="Scarica il PDF">Scarica il formato PDF del Quadro Orario</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+								
+                                
+								<a href="legenda.aspx?tipo=A&amp;id=2672" title="Vai alla Legenda" onclick="open_popup('legenda.aspx?tipo=A&amp;id=2672', 500, 700, 350, 20); return false;">Legenda</a>
+							
+							</div>
+							<div class="botLink"></div>
+							<div class="clearRight"></div>
+							
+						</div>
+						<div class="clearLeft"></div>
+						<!-- /Link destra -->
+					</div>						
+				</div>
+            
+				<!-- Tabella Quadro Orario -->
+				<h4 class="hidden">Quadro orario dei treni in arrivo</h4>
+				<div class="contTab">
+					<table border="0" cellpadding="0" cellspacing="0" width="100%" class="QOtab" summary="La tabella contiene le informazioni relative ai treni in arrivo nella stazione di Torino Porta Nuova. Vengono riportate informazioni su l'orario, il numero del treno, la stazione di provenienza, il binario di arrivo, classi e servizi a bordo, fermate precedenti e fermate successive, periodicit&agrave; e avvertenze.">
+						<thead>
+							<tr class="rigatop">
+								<th scope="col" style="width:5%">Orario di arrivo</th>
+								<th scope="col">Tipo e n. di treno</th>
+								<th scope="col">Stazione di provenienza<br />(orario di partenza)</th>
+								<th scope="col" style="width:6%">Binario programmato</th>
+								<th scope="col">Classi e servizi a bordo</th>
+								<th scope="col">Impresa di trasporto</th>
+								<th scope="col">Fermate precedenti<br />(orario di partenza)</th>
+								<th scope="col">Fermate successive<br />(orario di arrivo)</th>
+								<th scope="col" class="cellaultima">Periodicit&agrave; e avvertenze</th>
+							</tr>
+						</thead>
+						<tbody>
+						    
+                                        <tr>
+                                    
+                                    
+                                                                        
+								    <td class="cellauno center">
+								        05.15
+								    </td>							    								    
+								    							    								    
+								    <td>
+								    
+                                    
+								        <img src="images/TRN_FM3.gif" alt="Treno SFM Linea 3" />   
+								    24841
+								    
+								    </td>
+								    <td>
+								        
+							                <a href="QO_Arrivi_SiPMR.aspx?Id=711&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">
+							                    BUSSOLENO
+							                </a>
+							            
+							                (04.19)							       
+								    </td>
+								    <td>
+								        19 
+							                    
+								    </td>
+								    <td class="center">
+									    
+									
+                                                <img src='IMAGES/2.gif' alt='Servizio di Seconda Classe'/>&nbsp;
+                                         
+                                                <img src='IMAGES/bici.gif' alt='Servizio di trasporto Bici al seguito'/>&nbsp;
+                                         
+                                    
+								    </td>
+								    <td>
+								        TI
+								        
+                                    </td>    
+                                        
+								    <td>
+									    
+							        
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=699&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Bruzolo</a>(04.24)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=662&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Borgone</a>(04.28)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2293&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">S. Antonino Vaie</a>(04.32)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=1076&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Condove</a>(04.36)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2286&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">S. Ambrogio</a>(04.41)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=466&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Avigliana</a>(04.45)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2265&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Rosta</a>(04.50)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=396&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Alpignano</a>(04.55)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=1062&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Collegno</a>(05.00)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=26153180&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Grugliasco</a>(05.04)
+                                            		    
+								        &nbsp;</td>
+								    
+								    <td>
+								        
+							        
+								        &nbsp;</td>
+								        
+								        
+								        <td class="periodavv showPeriodicita"></td>
+								        
+							        </tr>
+							        
+							        
+							        <tr>
+							        
+								        <td colspan="10" class="rowOpenGrey">
+								    
+									        <div class="contdettaglio">
+										        <div class="hidden"><strong>Periodicit&agrave; e Avvertenze del Treno 24841 delle ore 05.15</strong></div>
+										        <div class="dettaglio">
+											        <div class="Sx">
+												        
+												        <h5>Periodicità</h5>
+                                                        <br />
+												        *NON CIRCOLA NEI GIORNI FESTIVI<br />
+												        
+											        </div>
+											        <div class="Dx">
+												        
+											        </div>
+											        <div class="clear"></div>
+										        </div>
+									        </div>
+								        </td>
+							        </tr>
+                                                            
+							            <tr class="dispari">						    
+							        
+                                    
+                                                                        
+								    <td class="cellauno center">
+								        05.35
+								    </td>							    								    
+								    							    								    
+								    <td>
+								    
+                                    
+								        <img src="images/trn_RV.gif" alt="Treno Regionale Veloce" />
+								    10220
+								    
+								    </td>
+								    <td>
+								        
+								        <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" />
+								        
+							                <a href="QO_Arrivi_SiPMR.aspx?Id=1122&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">
+							                    CUNEO
+							                </a>
+							            
+							                (04.24)							       
+								    </td>
+								    <td>
+								        2 
+							                    
+								    </td>
+								    <td class="center">
+									    
+									
+                                                <img src='IMAGES/2.gif' alt='Servizio di Seconda Classe'/>&nbsp;
+                                         
+                                                <img src='IMAGES/bici.gif' alt='Servizio di trasporto Bici al seguito'/>&nbsp;
+                                         
+                                    
+								    </td>
+								    <td>
+								        TI
+								        
+                                    </td>    
+                                        
+								    <td>
+									    
+							        
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=981&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Centallo</a>(04.37)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=1261&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Fossano</a>(04.48)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2477&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Savigliano</a>(04.56)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=969&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Cavallermaggiore</a>(05.02)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=841&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Carmagnola</a>(05.12)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=2653&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">To.Lingotto</a>(05.29)
+                                            		    
+								        &nbsp;</td>
+								    
+								    <td>
+								        
+							        
+								        &nbsp;</td>
+								        
+								        
+								        <td class="periodavv showPeriodicita"></td>
+								        
+							        </tr>
+							        
+							        
+							        <tr>
+							        
+							            <td colspan="10" class="rowOpen">
+							        
+									        <div class="contdettaglio">
+										        <div class="hidden"><strong>Periodicit&agrave; e Avvertenze del Treno 10220 delle ore 05.35</strong></div>
+										        <div class="dettaglio">
+											        <div class="Sx">
+												        
+												        <h5>Periodicità</h5>
+                                                        <br />
+												        *CIRCOLA DAL 15 DIC AL 25 LUG, DAL 25 AGO AL 13 DIC<br />*NON CIRCOLA NEI GIORNI FESTIVI, SABATO<br />
+												        
+											        </div>
+											        <div class="Dx">
+												        
+											        </div>
+											        <div class="clear"></div>
+										        </div>
+									        </div>
+								        </td>
+							        </tr>
+                                
+                                        <tr>
+                                    
+                                    
+                                                                        
+								    <td class="cellauno center">
+								        05.45
+								    </td>							    								    
+								    							    								    
+								    <td>
+								    
+                                    
+								        <img src="images/TRN_FM3.gif" alt="Treno SFM Linea 3" />   
+								    24839
+								    
+								    </td>
+								    <td>
+								        
+							                <a href="QO_Arrivi_SiPMR.aspx?Id=2602&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">
+							                    SUSA
+							                </a>
+							            
+							                (04.40)							       
+								    </td>
+								    <td>
+								        19 
+							                    
+								    </td>
+								    <td class="center">
+									    
+									
+                                                <img src='IMAGES/2.gif' alt='Servizio di Seconda Classe'/>&nbsp;
+                                         
+                                                <img src='IMAGES/bici.gif' alt='Servizio di trasporto Bici al seguito'/>&nbsp;
+                                         
+                                    
+								    </td>
+								    <td>
+								        TI
+								        
+                                    </td>    
+                                        
+								    <td>
+									    
+							        
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=711&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Bussoleno</a>(04.50)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=699&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Bruzolo</a>(04.55)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=662&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Borgone</a>(04.59)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2293&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">S. Antonino Vaie</a>(05.03)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=1076&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Condove</a>(05.07)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2286&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">S. Ambrogio</a>(05.12)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=466&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Avigliana</a>(05.16)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2265&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Rosta</a>(05.21)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=396&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Alpignano</a>(05.26)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=1062&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Collegno</a>(05.31)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=26153180&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Grugliasco</a>(05.35)
+                                            		    
+								        &nbsp;</td>
+								    
+								    <td>
+								        
+							        
+								        &nbsp;</td>
+								        
+								        
+								        <td class="periodavv showPeriodicita"></td>
+								        
+							        </tr>
+							        
+							        
+							        <tr>
+							        
+								        <td colspan="10" class="rowOpenGrey">
+								    
+									        <div class="contdettaglio">
+										        <div class="hidden"><strong>Periodicit&agrave; e Avvertenze del Treno 24839 delle ore 05.45</strong></div>
+										        <div class="dettaglio">
+											        <div class="Sx">
+												        
+												        <h5>Periodicità</h5>
+                                                        <br />
+												        *CIRCOLA NEI GIORNI FESTIVI<br />
+												        
+											        </div>
+											        <div class="Dx">
+												        
+											        </div>
+											        <div class="clear"></div>
+										        </div>
+									        </div>
+								        </td>
+							        </tr>
+                                                            
+							            <tr class="dispari">						    
+							        
+                                    
+                                                                        
+								    <td class="cellauno center">
+								        06.15
+								    </td>							    								    
+								    							    								    
+								    <td>
+								    
+                                    
+								        <img src="images/TRN_FM3.gif" alt="Treno SFM Linea 3" />   
+								    24843
+								    
+								    </td>
+								    <td>
+								        
+							                <a href="QO_Arrivi_SiPMR.aspx?Id=2602&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">
+							                    SUSA
+							                </a>
+							            
+							                (05.09)							       
+								    </td>
+								    <td>
+								        19 
+							                    
+								    </td>
+								    <td class="center">
+									    
+									
+                                                <img src='IMAGES/2.gif' alt='Servizio di Seconda Classe'/>&nbsp;
+                                         
+                                                <img src='IMAGES/bici.gif' alt='Servizio di trasporto Bici al seguito'/>&nbsp;
+                                         
+                                    
+								    </td>
+								    <td>
+								        TI
+								        
+                                    </td>    
+                                        
+								    <td>
+									    
+							        
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=711&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Bussoleno</a>(05.19)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=699&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Bruzolo</a>(05.24)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=662&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Borgone</a>(05.28)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2293&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">S. Antonino Vaie</a>(05.32)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=1076&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Condove</a>(05.36)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2286&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">S. Ambrogio</a>(05.41)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=466&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Avigliana</a>(05.45)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2265&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Rosta</a>(05.50)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=396&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Alpignano</a>(05.55)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=1062&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Collegno</a>(06.00)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=26153180&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Grugliasco</a>(06.04)
+                                            		    
+								        &nbsp;</td>
+								    
+								    <td>
+								        
+							        
+								        &nbsp;</td>
+								        
+								        
+								        <td class="periodavv showPeriodicita"></td>
+								        
+							        </tr>
+							        
+							        
+							        <tr>
+							        
+							            <td colspan="10" class="rowOpen">
+							        
+									        <div class="contdettaglio">
+										        <div class="hidden"><strong>Periodicit&agrave; e Avvertenze del Treno 24843 delle ore 06.15</strong></div>
+										        <div class="dettaglio">
+											        <div class="Sx">
+												        
+												        <h5>Periodicità</h5>
+                                                        <br />
+												        *NON CIRCOLA NEI GIORNI FESTIVI<br />
+												        
+											        </div>
+											        <div class="Dx">
+												        
+											        </div>
+											        <div class="clear"></div>
+										        </div>
+									        </div>
+								        </td>
+							        </tr>
+                                
+                                        <tr>
+                                    
+                                    
+                                                                        
+								    <td class="cellauno center">
+								        06.22
+								    </td>							    								    
+								    							    								    
+								    <td>
+								    
+                                    
+								        <img src="images/trn_R.gif" alt="Treno Regionale" />
+								    4372
+								    
+								    </td>
+								    <td>
+								        
+							                <a href="QO_Arrivi_SiPMR.aspx?Id=674&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">
+							                    BRA
+							                </a>
+							            
+							                (05.35)							       
+								    </td>
+								    <td>
+								        3 
+							                    
+								    </td>
+								    <td class="center">
+									    
+									
+                                                <img src='IMAGES/2.gif' alt='Servizio di Seconda Classe'/>&nbsp;
+                                         
+                                                <img src='IMAGES/accessib.gif' alt='Treno con carrozza attrezzata per il trasporto di passeggeri su sedia a rotelle'/>&nbsp;
+                                         
+                                                <img src='IMAGES/bici.gif' alt='Servizio di trasporto Bici al seguito'/>&nbsp;
+                                         
+                                    
+								    </td>
+								    <td>
+								        TI
+								        
+                                    </td>    
+                                        
+								    <td>
+									    
+							        
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2564&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Sommariva Bosco</a>(05.44)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=841&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Carmagnola</a>(05.52)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2883&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Villastellone</a>(05.58)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2725&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Trofarello</a>(06.04)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=1637&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Moncalieri</a>(06.09)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=2653&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">To.Lingotto</a>(06.14)
+                                            		    
+								        &nbsp;</td>
+								    
+								    <td>
+								        
+							        
+								        &nbsp;</td>
+								        
+								        
+								        <td class="periodavv showPeriodicitaAvvertenze"></td>
+								        
+							        </tr>
+							        
+							        
+							        <tr>
+							        
+								        <td colspan="10" class="rowOpenGrey">
+								    
+									        <div class="contdettaglio">
+										        <div class="hidden"><strong>Periodicit&agrave; e Avvertenze del Treno 4372 delle ore 06.22</strong></div>
+										        <div class="dettaglio">
+											        <div class="Sx">
+												        
+												        <h5>Periodicità</h5>
+                                                        <br />
+												        *NON CIRCOLA NEI GIORNI FESTIVI<br />
+												        
+											        </div>
+											        <div class="Dx">
+												        
+												        <h5>Avvertenze</h5>
+												        <br />
+												        Treno garantito in caso di sciopero nei soli giorni feriali.L'orario effettivo di arrivo e partenza nelle singole stazioni e la tratta garantita possono essere diversi da quanto indicato.
+												        
+											        </div>
+											        <div class="clear"></div>
+										        </div>
+									        </div>
+								        </td>
+							        </tr>
+                                                            
+							            <tr class="dispari">						    
+							        
+                                    
+                                                                        
+								    <td class="cellauno center">
+								        06.35
+								    </td>							    								    
+								    							    								    
+								    <td>
+								    
+                                    
+								        <img src="images/trn_RV.gif" alt="Treno Regionale Veloce" />
+								    10200
+								    
+								    </td>
+								    <td>
+								        
+								        <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" />
+								        
+							                <a href="QO_Arrivi_SiPMR.aspx?Id=1122&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">
+							                    CUNEO
+							                </a>
+							            
+							                (05.24)							       
+								    </td>
+								    <td>
+								        5 
+							                    
+								    </td>
+								    <td class="center">
+									    
+									
+                                                <img src='IMAGES/2.gif' alt='Servizio di Seconda Classe'/>&nbsp;
+                                         
+                                                <img src='IMAGES/accessib.gif' alt='Treno con carrozza attrezzata per il trasporto di passeggeri su sedia a rotelle'/>&nbsp;
+                                         
+                                                <img src='IMAGES/bici.gif' alt='Servizio di trasporto Bici al seguito'/>&nbsp;
+                                         
+                                    
+								    </td>
+								    <td>
+								        TI
+								        
+                                    </td>    
+                                        
+								    <td>
+									    
+							        
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=981&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Centallo</a>(05.37)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=1261&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Fossano</a>(05.47)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=2477&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Savigliano</a>(05.56)
+                                            
+                                                <br />
+                                            
+                                                <span></span><a href="QO_Arrivi_SiPMR.aspx?Id=969&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Cavallermaggiore</a>(06.02)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=841&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">Carmagnola</a>(06.12)
+                                            
+                                                <br />
+                                            
+                                                <img src="images/ico_pmr.gif" alt="Stazione con servizio di assistenza alle Persone a Ridotta Mobilit&agrave;" class="ico" /><a href="QO_Arrivi_SiPMR.aspx?Id=2653&amp;pag=01&amp;start=0&amp;stop=6&amp;dalle=04.00&amp;alle=08.00">To.Lingotto</a>(06.29)
+                                            		    
+								        &nbsp;</td>
+								    
+								    <td>
+								        
+							        
+								        &nbsp;</td>
+								        
+								        
+								        <td class="center">&nbsp;</td>
+								        
+							        </tr>
+							        
+							        
+							
+						</tbody>
+					</table>
+				</div>
+				<!-- /Tabella Quadro Orario -->
+				<script type="text/javascript">initExpandCollapseText('images/plus2.gif', 'images/minus2.gif', 'Esplodi il dettaglio', 'Comprimi il dettaglio');</script>
+
+				<!-- Paginazione -->
+				<div class="PageNumb">
+					
+                                    <span class="pagenumber">1</span>&nbsp;&nbsp;
+                                      		
+					                        <a title="Pagina 2" href="QO_Arrivi_SiPMR.aspx?Id=2672&amp;pag=2&amp;start=6&amp;stop=12&amp;dalle=04.00&amp;alle=08.00">2</a>&nbsp;&nbsp;
+					                      		
+					                        <a title="Pagina 3" href="QO_Arrivi_SiPMR.aspx?Id=2672&amp;pag=3&amp;start=12&amp;stop=18&amp;dalle=04.00&amp;alle=08.00">3</a>&nbsp;&nbsp;
+					                    
+                                            <a title="Pagina 4" href="QO_Arrivi_SiPMR.aspx?Id=2672&amp;pag=4&amp;start=18&amp;stop=19&amp;dalle=04.00&amp;alle=08.00">4</a>&nbsp;&nbsp;
+                                        
+					        <a title="Vai alla pagina successiva" href="QO_Arrivi_SiPMR.aspx?Id=2672&amp;pag=2&amp;start=6&amp;stop=12&amp;dalle=04.00&amp;alle=08.00">›</a>&nbsp;&nbsp;
+					    
+					        <a title="Vai all'ultima pagina" href="QO_Arrivi_SiPMR.aspx?Id=2672&amp;pag=4&amp;start=18&amp;stop=19&amp;dalle=04.00&amp;alle=08.00">»</a>
+					    
+                    
+				</div>
+				<!-- /Paginazione -->
+
+			</div>
+			<!-- /Paragrafo -->
+			
+			<p class="hidden">[ <a href="#top">Torna all&#39;inizio della pagina</a> ]</p>
+		</div>
+		<!-- /CONTENUTI -->
+		
+    </div>
+	<!-- /CONTAINER -->
+
+	<!-- FOOTER -->
+	<div id="footerFS" class="box">
+		<div class="bgRight">
+			<div class="footerRightNavImg">
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=02b7f8fcf75ca110VgnVCM1000003f16f90aRCRD" accesskey="a">Aiuto</a><span>&nbsp;&nbsp;|&nbsp;</span>
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=361880d26a5ca110VgnVCM1000003f16f90aRCRD" accesskey="m">Mappa</a><span>&nbsp;&nbsp;|&nbsp;</span>
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=8d599798fff9a110VgnVCM1000003f16f90aRCRD" accesskey="e" title="Note esplicative riguardo le tecniche adottate e gli obiettivi raggiunti">Accessibilità</a>
+				<a href="http://www.pubbliaccesso.gov.it/logo/logo.php?sid=2c8f639e" title="Link al sito esterno pubbliaccesso.gov.it" class="linkEsterno">
+				<img src="images/logo_accessibilita.gif" height="18px" width="24px" alt="Logo attestante il superamento, ai sensi della Legge n. 4/2004, della verifica tecnica di accessibilit&agrave;." /></a><span>&nbsp;&nbsp;|&nbsp;</span>	
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=1039e602d2e5a110VgnVCM1000003f16f90aRCRD" accesskey="d">Credits</a>		
+			</div>
+			<div class="footerLeftNav">
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=34c2f2510463b110VgnVCM1000003f16f90aRCRD" accesskey="c">Contatti</a><span>&nbsp;&nbsp;|&nbsp;</span>
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=d3f0960095fba110VgnVCM1000003f16f90aRCRD" accesskey="n">Note legali</a><span>&nbsp;&nbsp;|&nbsp;</span>
+				Partita Iva 01008081000<span>&nbsp;&nbsp;|&nbsp;</span>
+				<a href="http://www.rfi.it/cms/v/index.jsp?vgnextoid=04cccb5e50b2a110VgnVCM10000080a3e90aRCRD" accesskey="l">Link</a>
+			</div>
+		</div>
+	</div>
+	<p class="hidden">[ <a href="#top">Torna all&#39;inizio della pagina</a> ]</p>
+	<!-- /FOOTER -->
+</body>
+</html>
