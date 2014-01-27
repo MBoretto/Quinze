@@ -29,6 +29,39 @@ print response.status, response.reason
 
 data = response.read()
 conn.close()
-print data
+#print data
+
+#preso da http://docs.python.org/2/library/htmlparser.html
+# http://stackoverflow.com/questions/3276040/how-can-i-use-the-python-htmlparser-library-to-extract-data-from-a-specific-div
 
 
+import HTMLParser
+
+# create a subclass and override the handler methods
+class MyHTMLParser(HTMLParser.HTMLParser):
+	def __init__(self):
+		HTMLParser.HTMLParser.__init__(self)
+		self.F_tr = 0
+		self.F_td = 0
+		self.data = []
+
+	def handle_starttag(self, tag, attrs):
+		if tag == 'tr':
+			self.F_tr = 1
+		if tag == 'td':
+			self.F_td = 1
+
+	def handle_endtag(self, tag):
+		if tag == 'tr':
+			self.F_tr = 0
+		if tag == 'td':
+			self.F_td = 1
+
+	def handle_data(self, data):
+		if self.F_tr == 1 and self.F_td == 1:
+			data = data.strip(' \t\n\r')
+			print data 
+
+# instantiate the parser and fed it some HTML
+parser = MyHTMLParser()
+parser.feed(data)
