@@ -14,19 +14,19 @@ import csv
 
 stazioni= dict()
 stazioni_nuove= dict()
-stazioni['729']  = 'Cagliari'
-stazioni['2672'] = 'Torino+Porta+Nuova'
-stazioni['1878'] = 'Palermo+Centrale'
+stazioni_nuove['729']  = 'Cagliari'
+stazioni_nuove['2672'] = 'Torino+Porta+Nuova'
+stazioni_nuove['1878'] = 'Palermo+Centrale'
 
 
 
 i = 0
 max = 10
-while i < max :#tutto
+while max != 1 :#tutto
 #while i < 81 : #Cagliari style
 #while i < 1 :
-	stazioni_nuove= dict()
-	chiavi_stazioni = stazioni.keys()
+	stazioni_tmp= dict()
+	chiavi_stazioni = stazioni_nuove.keys()
 	max = len(chiavi_stazioni)
 
 	
@@ -40,10 +40,10 @@ while i < max :#tutto
 		+ 'car1=' + 'arrivi'
 		+ '&dalle=' + '08.00'
 		+ '&alle=' + '12.00'
-		#+ '&txtStazione=' + stazioni[chiavi_stazioni[i]]
+		#+ '&txtStazione=' + stazioni_nuove[chiavi_stazioni[0]]
 		+ '&x=' + '39'
 		+ '&y=' + '11'
-		+ '&Id=' + chiavi_stazioni[i]
+		+ '&Id=' + chiavi_stazioni[0]
 		+ '&pag=' + '01'
 		+ '&start=' + '0'
 
@@ -84,21 +84,28 @@ while i < max :#tutto
 					explode_query = parse_qs(url.query)
 									
 					#print url.query , paese
-					if explode_query['Id'][0] != chiavi_stazioni[i]:
+					if explode_query['Id'][0] != chiavi_stazioni[0]:
 						#print explode_query['Id'][0], paese
-						stazioni_nuove[str(explode_query['Id'][0])] = paese
+						if explode_query['Id'][0] not in stazioni.keys():
+							stazioni_tmp[str(explode_query['Id'][0])] = paese
 				
-
-		stazioni.update(stazioni_nuove)	
+		
+		#stazioni_nuove.update(stazioni_tmp)
+		stazioni[chiavi_stazioni[0]]= stazioni_nuove[chiavi_stazioni[0]]
+		del stazioni_nuove[chiavi_stazioni[0]]
+		stazioni_nuove.update(stazioni_tmp)
+	
+	        print '{0:4} {1:10} {2:25} {3:18} {4:5}'.format(i, chiavi_stazioni[0],stazioni[chiavi_stazioni[0]].encode('utf8'),'Stazioni trovate: ',len(stazioni_nuove))
 		
 
 	else:
-		print 'Errore: ', response.status, response.reason ,
-		
+		print 'Errore: ', response.status, response.reason 
+		del stazioni_nuove[chiavi_stazioni[0]]
 	
 	
 	
- 	print '{0:4} {1:10} {2:25} {3:18} {4:5}'.format(i, chiavi_stazioni[i],stazioni[chiavi_stazioni[i]].encode('utf8'),'Stazioni trovate: ',len(stazioni))
+	
+# 	print '{0:4} {1:10} {2:25} {3:18} {4:5}'.format(i, chiavi_stazioni[0],stazioni[chiavi_stazioni[0]].encode('utf8'),'Stazioni trovate: ',len(stazioni_nuove))
 	
 	
 	
@@ -108,15 +115,6 @@ while i < max :#tutto
 
 #print stazioni
 
-
-
-	 
-#with open ('dict_stazioni.log', 'w') as fp:
-#	for p in stazioni.items():
-#		fp.write("%s:%s\n" % p.encode('utf8'))
-
-
- 
  
 f = csv.writer(open("stazioni.csv", "w"))
 #f.writerow(["Name", "Link"]) # Write column headers as the first line
@@ -124,12 +122,7 @@ f = csv.writer(open("stazioni.csv", "w"))
 a = stazioni.keys()
 b = stazioni.values()
 
-
-#for h in len(a):
 for h in range(0,len(a)):
-    #names = link.contents[0]
-    #fullLink = link.get('href')
-    #puppa = '{0:4} | {1:25}'.format(str(a[h]), str(b[h]))
     f.writerow([a[h].encode('utf8'), b[h].encode('utf8')])
 
 
