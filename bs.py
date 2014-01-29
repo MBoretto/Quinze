@@ -14,12 +14,15 @@ import csv
 
 stazioni= dict()
 stazioni_nuove= dict()
-stazioni['2672']= 'Torino+Porta+Nuova'
+#stazioni['2672'] = 'Torino+Porta+Nuova'
+stazioni['729']  = 'Cagliari'
+#stazioni['1878'] = 'Palermo+Centrale'
 
 
 
 i = 0
-while i < 1804 :
+#while i < 1804 :
+while i < 41 : #Cagliari style
 #while i < 1 :
 	stazioni_nuove= dict()
 	chiavi_stazioni = stazioni.keys()
@@ -75,7 +78,7 @@ while i < 1804 :
 
 				if url.path == 'QO_Arrivi_SiPMR.aspx':	
 					paese = paese.strip(' \t\n\r')					
-					paese = paese.replace(" ", "+")
+					#paese = paese.replace(" ", "+")
 					explode_query = parse_qs(url.query)
 									
 					#print url.query , paese
@@ -92,10 +95,10 @@ while i < 1804 :
 		
 	
 	
-	#print 'iterazione' , i
-	print i , chiavi_stazioni[i] , stazioni[chiavi_stazioni[i]] , '\t\t\t\tStazioniTrovate: ' , len(stazioni) 
-	#print stazioni
-	#print
+	
+ 	print '{0:4} {1:10} {2:25} {3:18} {4:5}'.format(i, chiavi_stazioni[i],stazioni[chiavi_stazioni[i]],'Stazioni trovate: ',len(stazioni))
+	
+	
 	
 
 
@@ -123,6 +126,7 @@ b = stazioni.values()
 #for h in len(a):
 for h in range(0,len(a)):
     #names = link.contents[0]
-    #fullLink = link.get('href') 
+    #fullLink = link.get('href')
+    #puppa = '{0:4} | {1:25}'.format(str(a[h]), str(b[h]))
     f.writerow([a[h], b[h]])
 		
