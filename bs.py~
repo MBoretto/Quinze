@@ -14,18 +14,20 @@ import csv
 
 stazioni= dict()
 stazioni_nuove= dict()
+stazioni['729']  = 'Cagliari'
 stazioni['2672'] = 'Torino+Porta+Nuova'
-#stazioni['729']  = 'Cagliari'
-#stazioni['1878'] = 'Palermo+Centrale'
+stazioni['1878'] = 'Palermo+Centrale'
 
 
 
 i = 0
-#while i < 1844 :
-while i < 81 : #Cagliari style
+max = 10
+while i < (max-1) :#tutto
+#while i < 81 : #Cagliari style
 #while i < 1 :
 	stazioni_nuove= dict()
 	chiavi_stazioni = stazioni.keys()
+	max = len(chiavi_stazioni)
 
 	
 
@@ -96,7 +98,7 @@ while i < 81 : #Cagliari style
 	
 	
 	
- 	print '{0:4} {1:10} {2:25} {3:18} {4:5}'.format(i, chiavi_stazioni[i],stazioni[chiavi_stazioni[i]],'Stazioni trovate: ',len(stazioni))
+ 	print '{0:4} {1:10} {2:25} {3:18} {4:5}'.format(i, chiavi_stazioni[i],stazioni[chiavi_stazioni[i]].encode('utf8'),'Stazioni trovate: ',len(stazioni))
 	
 	
 	
