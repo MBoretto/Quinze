@@ -1,9 +1,12 @@
 #!/usr/bin/python
+#ispirazioni
 #http://jeriwieringa.com/blog/2012/11/04/beautiful-soup-tutorial-part-1/
+#http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 import httplib
 from urlparse import urlsplit, urlparse, parse_qs
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
+import csv
 
 
 
@@ -16,7 +19,8 @@ stazioni['2672']= 'Torino+Porta+Nuova'
 
 
 i = 0
-while i < 1470 :
+while i < 1804 :
+#while i < 1 :
 	stazioni_nuove= dict()
 	chiavi_stazioni = stazioni.keys()
 
@@ -31,7 +35,7 @@ while i < 1470 :
 		+ 'car1=' + 'arrivi'
 		+ '&dalle=' + '08.00'
 		+ '&alle=' + '12.00'
-		+ '&txtStazione=' + stazioni[chiavi_stazioni[i]]
+		#+ '&txtStazione=' + stazioni[chiavi_stazioni[i]]
 		+ '&x=' + '39'
 		+ '&y=' + '11'
 		+ '&Id=' + chiavi_stazioni[i]
@@ -48,12 +52,12 @@ while i < 1470 :
 
 	if response.status == 200 :
 		
-		data = response.read()
+		pagina = response.read()
 		conn.close()
-		#print data
+		#print pagina
 
 
-		soup = BeautifulSoup(data)
+		soup = BeautifulSoup(pagina)
 
 		#print(soup.prettify())
 		#print(soup.title)
@@ -96,4 +100,29 @@ while i < 1470 :
 
 
 	i = i + 1
+
+print stazioni
+
+
+
+	 
+#with open ('dict_stazioni.log', 'w') as fp:
+#	for p in stazioni.items():
+#		fp.write("%s:%s\n" % p.encode('utf8'))
+
+
+ 
+ 
+f = csv.writer(open("stazioni.csv", "w"))
+#f.writerow(["Name", "Link"]) # Write column headers as the first line
+
+a = stazioni.keys()
+b = stazioni.values()
+
+
+#for h in len(a):
+for h in range(0,len(a)):
+    #names = link.contents[0]
+    #fullLink = link.get('href') 
+    f.writerow([a[h], b[h]])
 		
