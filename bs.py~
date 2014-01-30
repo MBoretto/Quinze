@@ -2,7 +2,6 @@
 #ispirazioni
 #http://jeriwieringa.com/blog/2012/11/04/beautiful-soup-tutorial-part-1/
 #http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-#commento
 import httplib
 from urlparse import urlsplit, urlparse, parse_qs
 from bs4 import BeautifulSoup
